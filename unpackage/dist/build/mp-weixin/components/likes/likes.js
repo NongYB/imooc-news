@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/likes/likes"],{"2f68":function(t,e,n){"use strict";var i=n("e1d5"),c=n.n(i);c.a},"3cc9":function(t,e,n){"use strict";n.r(e);var i=n("f2dc"),c=n.n(i);for(var u in i)"default"!==u&&function(t){n.d(e,t,(function(){return i[t]}))}(u);e["default"]=c.a},"402f":function(t,e,n){"use strict";n.r(e);var i=n("db3f"),c=n("3cc9");for(var u in c)"default"!==u&&function(t){n.d(e,t,(function(){return c[t]}))}(u);n("2f68");var o,a=n("f0c5"),s=Object(a["a"])(c["default"],i["b"],i["c"],!1,null,null,null,!1,i["a"],o);e["default"]=s.exports},db3f:function(t,e,n){"use strict";n.d(e,"b",(function(){return c})),n.d(e,"c",(function(){return u})),n.d(e,"a",(function(){return i}));var i={uniIcons:function(){return Promise.all([n.e("common/vendor"),n.e("components/uni-icons/uni-icons")]).then(n.bind(null,"334c"))}},c=function(){var t=this,e=t.$createElement;t._self._c},u=[]},e1d5:function(t,e,n){},f2dc:function(t,e,n){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var n={name:"likes",props:{item:{type:Object,default:function(){return{}}},types:{type:String,default:""}},data:function(){return{like:!1}},watch:{item:function(t){this.like=this.item.is_like}},created:function(){this.like=this.item.is_like},methods:{likeTap:function(){this.like=!this.like,this.setUpdateLikes()},setUpdateLikes:function(){var e=this;t.showLoading(),this.$api.update_like({article_id:this.item._id}).then((function(n){t.hideLoading(),t.showToast({title:e.like?"收藏成功":"取消收藏",icon:"none"}),t.$emit("update_article",e.types)})).catch((function(){t.hideLoading()}))}}};e.default=n}).call(this,n("543d")["default"])}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/likes/likes-create-component',
+    {
+        'components/likes/likes-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("402f"))
+        })
+    },
+    [['components/likes/likes-create-component']]
+]);
